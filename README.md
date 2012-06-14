@@ -3,15 +3,15 @@ super-simple-webscraper
 
 Super simple webpage scraper. This script is a super _simple_ webpage scraper. It requests the url passed and then parses it searching for:
 
- * <img src="path/to/an/image.png">
- * <link rel="stylesheet" href="path/to/a/stylesheet.css">
- * <script src="path/to/some/javascript.js"></script>
+ * &lt;img src="path/to/an/image.png"&gt;
+ * &lt;link rel="stylesheet" href="path/to/a/stylesheet.css"&gt;
+ * &lt;script src="path/to/some/javascript.js"&gt;&lt;/script&gt;
 
 The script then requests all these assets and places them inline in the output. 
 
- * <img src="..."> becomes <img src="data:image/png;base64,isndifnisdf=">
- * <link rel="stylesheet" href="..."> becomes <style>contents of css</style>
- * <script src="..."></script> becomes <script>contents of js</script>
+ * &lt;img src="..."&gt; becomes &lt;img src="data:image/png;base64,isndifnisdf="&gt;
+ * &lt;link rel="stylesheet" href="..."&gt; becomes &lt;style&gt;contents of css&lt;/style&gt;
+ * &lt;script src="..."&gt;&lt;/script&gt; becomes &lt;script&gt;contents of js&lt;/script&gt;
 
 Then the script searches for url(...) for the background images and replaces them with url(data:image/gif;base64,sodfosidfoik=)
 
